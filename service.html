@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NK-TECH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0072C6;
+            color: #fff;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header img {
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #0072C6;
+            color: #fff;
+        }
+        nav a.active {
+            color: #0072C6;
+        }
+        nav a i {
+            margin-right: 8px;
+            font-size: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .service {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: scale(1.02);
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .service h2 {
+            color: #007BFF;
+            padding: 15px;
+            margin: 0;
+        }
+        p {
+            padding: 15px;
+            line-height: 1.6;
+            color: #555;
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 15px;
+        }
+        footer img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+        footer img:hover {
+            transform: scale(1.1);
+        }
+        footer div {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            footer img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo de Arcene Nkunzimana"> <!-- Update the logo path -->
+    </header>
+    
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+        <a href="apropo.html"><i class="fas fa-info-circle"></i> À propos</a>
+        <a href="service.html" class="active"><i class="fas fa-tools"></i> Services</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Mes Services</h1>
+        <div class="service">
+            <h2>Développement Web</h2>
+            <img src="web.jpg" alt="Développement Web">
+            <p>Je crée des sites web personnalisés adaptés aux besoins de mes clients, en utilisant les technologies les plus récentes.</p>
+        </div>
+        <div class="service">
+            <h2>Développement d'Applications Mobiles</h2>
+            <img src="application.jpeg" alt="Développement d'Applications Mobiles">
+            <p>Je développe des applications mobiles intuitives et performantes pour iOS et Android, en mettant l'accent sur l'expérience utilisateur.</p>
+        </div>
+        <div class="service">
+            <h2>Systèmes d'Information</h2>
+            <img src="systeme.jpeg" alt="Systèmes d'Information">
+            <p>Je propose des solutions robustes pour la gestion de systèmes d'information, incluant l'analyse de données et l'intégration de systèmes.</p>
+        </div>
+        <div class="service">
+            <h2>Gestion de Projets</h2>
+            <img src="projet.jpeg" alt="Gestion de Projets">
+            <p>J'assure la gestion de projets informatiques de A à Z, en garantissant le respect des délais et des budgets.</p>
+        </div>
+        <p>Si mes services vous ont convaincu, n'hésitez pas à me contacter pour discuter des prix et négocier le service désiré.</p>
+    </div>
+
+    <footer>
+        <h4>Contactez-nous</h4>
+        <div class="social-icons">
+            <a href="https://wa.me/25761505343" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100073057550737" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+        </div>
+        <div>WhatsApp | Facebook</div>
+    </footer>
+</body>
+</html>

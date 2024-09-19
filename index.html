@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NK-TECH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+  
+  
+  
+  
+.section1 {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #633;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les images */
+    flex-wrap: wrap; /* Permet aux images de s'ajuster sur plusieurs lignes */
+}
+
+.image-card {
+    flex: 1 1 300px; /* Permet aux images de s'ajuster avec une taille minimum */
+    max-width: 400px; /* Taille maximale pour chaque carte */
+    border-radius: 10px;
+    overflow: hidden; /* Pour arrondir les coins des images */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block; /* Évite les espaces en dessous des images */
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.8em; /* Ajuste la taille du texte pour les petits écrans */
+    }
+}
+
+.image-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-card img {
+    width: 300px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-card:hover img {
+    transform: scale(1.1);
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+  
+  
+  
+  
+  
+  
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0072C6;
+      color: #fff;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header img {
+      height: 100px;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 20px;
+      transition: background-color 0.3s, color 0.3s;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #0072C6;
+      color: #fff;
+    }
+    nav a.active {
+      color: #0072C6;
+    }
+    nav a i {
+      margin-right: 8px;
+      font-size: 20px;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      color: #0072C6;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .section p {
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #0072C6;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      header img {
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      nav a {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
+      .section h2 {
+        font-size: 24px;
+      }
+      nav a {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      
+     .section {
+    padding: 40px 20px; /* Espacement interne */
+    background-color: #ffffff; /* Couleur de fond blanche */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    margin: 20px 0; /* Espacement entre les sections */
+    text-align: center; /* Centrage du texte */
+}
+
+h2 {
+    font-size: 2.5em; /* Taille du titre */
+    margin-bottom: 20px; /* Marges sous le titre */
+    color: #007bff; /* Couleur du titre */
+}
+
+ul {
+    list-style-type: none; /* Supprime les puces par défaut */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+li {
+    font-size: 1.2em; /* Taille des éléments de la liste */
+    margin: 15px 0; /* Espacement vertical entre les items */
+    display: flex; /* Utilisation de flex pour aligner les icônes et le texte */
+    align-items: center; /* Alignement vertical centré */
+}
+
+li i {
+    color: #007bff; /* Couleur des icônes */
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+    font-size: 1.5em; /* Taille des icônes */
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2em; /* Ajuste la taille du titre pour les petits écrans */
+    }
+    li {
+        font-size: 1em; /* Ajuste la taille du texte pour les petits écrans */
+    }
+    
+    /* css pour la permutation 
+    .images-container {
+    position: relative;
+    max-width: 100%; /* Limite la largeur maximale de l'image */
+    overflow: hidden; /* Cache les images qui débordent */
+    display: flex; /* Utilisation de flexbox pour aligner les images */
+}
+
+.image-card {
+    flex: 1; /* Chaque image prend un espace égal */
+    transition: transform 0.5s ease; /* Transition pour un effet fluide */
+}
+
+.image-card img {
+    width: 100%; /* Images responsives */
+    height: auto;
+    border-radius: 10px; /* Coins arrondis pour un aspect esthétique */
+}
+    
+   
+    
+
+      
+    
+
+ </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo"> <!-- Update the logo path -->
+  </header>
+  <nav>
+    <a href="#" class="active"><i class="fas fa-home"></i> Accueil</a>
+    <a href="apropo.html"><i class="fas fa-info-circle"></i> À propos</a>
+    <a href="service.html"><i class="fas fa-tools"></i> Services</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+  </nav>
+  <main>
+    <section class="section">
+      <h2>Bienvenue sur mon site web</h2>
+      <p>Bonjour, je m'appelle Arcene Nkunzimana et je suis un ingénieur en génie informatique. Sur ce site, vous trouverez des informations sur mes services et mes compétences.</p>
+      
+       <img src="NK1.jpg" alt="Photo de profil">
+    </section>
+    
+  
+    <main>
+    <section class="section1">
+        <h2>Innovation is the ability to see change as an opportunity </h2>
+        <div class="images-container">
+            <div class="image-card">
+                <img src="ino1.jpg" alt="Technologie 1"> <!-- Mettez à jour le chemin de l'image -->
+            </div>
+            <div class="image-card">
+                <img src="BNK2.png" alt="Technologie 2"> <!-- Mettez à jour le chemin de l'image -->
+            </div>
+            
+        </div>
+    </section>
+</main>
+    
+    
+      <section id="services" class="section">
+        <h2>Services</h2>
+        <ul>
+            <li><i class="fas fa-code"></i> Développement Web</li>
+            <li><i class="fas fa-mobile-alt"></i> Applications Mobiles</li>
+            <li><i class="fas fa-cogs"></i> Maintenance et Support</li>
+        </ul>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2024 NK-TECH. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+  
+ // script pour permuter
+ 
+ 
+    const imagesContainer = document.querySelector('.images-container');
+    const images = document.querySelectorAll('.image-card');
+
+    function shuffleImages() {
+        // Convertir la NodeList en tableau pour pouvoir le manipuler
+        const imagesArray = Array.from(images);
+        
+        // Mélanger le tableau
+        for (let i = imagesArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [imagesArray[i], imagesArray[j]] = [imagesArray[j], imagesArray[i]]; // Échange
+        }
+
+        // Réorganiser les images dans le conteneur
+        imagesContainer.innerHTML = ''; // Vider le conteneur
+        imagesArray.forEach(image => imagesContainer.appendChild(image)); // Ajouter les images mélangées
+    }
+
+    // Appeler la fonction pour mélanger les images toutes les 6 secondes
+    setInterval(shuffleImages, 6000);
+
+ 
+
+  
+ 
+
+    // Afficher une image aléatoire au chargement
+    window.onload = showRandomSlide;
+    
+    // Changer d'image toutes les 3 secondes
+    setInterval(showRandomSlide, 3000);
+  
+    // Gestion du formulaire de contact
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      alert('Merci, votre message a été envoyé !');
+      form.reset();
+    });
+  </script>
+</body>
+</html>

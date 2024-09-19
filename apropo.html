@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK-TECH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0072C6;
+            color: #fff;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header img {
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #0072C6;
+            color: #fff;
+        }
+        nav a.active {
+            color: #0072C6;
+        }
+        nav a i {
+            margin-right: 8px;
+            font-size: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            nav a {
+                font-size: 18px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo de Arcene Nkunzimana"> <!-- Update the logo path -->
+    </header>
+    
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+        <a href="apropo.html" class="active"><i class="fas fa-info-circle"></i> À propos</a>
+        <a href="service.html"><i class="fas fa-tools"></i> Services</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>À Propos de Moi</h1>
+        <p>Bonjour ! Je suis ingénieur en génie informatique, passionné par les technologies et l'innovation. Avec plusieurs années d'expérience dans le développement de logiciels, j'aime relever des défis techniques et travailler sur des projets variés.</p>
+        <p>Mon expertise inclut le développement web, l'intelligence artificielle et la gestion de projets. Je suis toujours à la recherche de nouvelles opportunités pour apprendre et partager mes connaissances.</p>
+        <p>En dehors du travail, j'aime explorer de nouvelles technologies, lire des livres sur le développement personnel et passer du temps avec ma famille et mes amis.</p>
+        <h2>Mon Parcours Académique</h2>
+        <p>J'ai obtenu mon baccalauréat en informatique à l'Institut Supérieur des Sciences Appliquées (ISSA) de l'Université du Burundi, campus Kiriri. Pendant trois ans, j'ai étudié dans le département de Technologie de l'Information et de Communication, où j'ai acquis des connaissances solides dans divers domaines de l'informatique. Cette formation m'a permis de maîtriser les concepts fondamentaux du développement logiciel, de l'administration des systèmes, et des réseaux informatiques. Grâce à une approche pratique et théorique, j'ai développé des compétences techniques qui me permettent de relever des défis dans le monde professionnel et de contribuer efficacement à des projets technologiques variés.</p>
+    </div>
+</body>
+</html>
